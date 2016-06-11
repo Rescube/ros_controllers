@@ -345,7 +345,7 @@ namespace diff_drive_controller{
     const double vel_left  = (curr_cmd.lin - curr_cmd.ang * ws / 2.0)/wr;
     const double vel_right = (curr_cmd.lin + curr_cmd.ang * ws / 2.0)/wr;
 
-    printf("debug1 ws: %2.2f\twr: %2.2f\tlin: %2.2f\tang: %2.2f\tleft: %2.2f\tright: %2.2f \n",ws,wr,curr_cmd.lin,curr_cmd.ang,vel_left,vel_right);
+    // printf("debug1 ws: %2.2f\twr: %2.2f\tlin: %2.2f\tang: %2.2f\tleft: %2.2f\tright: %2.2f \n",ws,wr,curr_cmd.lin,curr_cmd.ang,vel_left,vel_right);
     // Set wheels velocities:
     for (size_t i = 0; i < wheel_joints_size_; ++i)
     {
